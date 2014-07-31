@@ -38,7 +38,7 @@
             </div>
 
 
-        <div>
+        <div id="slides">
             <img src="images/chavez-1.jpg" alt="">
             <img src="images/chavez-2.jpg" alt="">
             <img src="images/chavez-3.jpg" alt="">
@@ -131,14 +131,96 @@
                 <div id="menu-section-content" class="menu-section-content menu-dinner is-active">
                     <!-- TODO we'll add the dinner menu content here. Write two columns with the class .menu-group and the foundation column classes. -->
 
-                    <div class="menu-group">
-                        
-                        
-                    </div>
 
                         <div class="menu-group">
                             <!-- TODO Inside each .menu-group, there should be an h4 with the title. -->
-                            <h4></h4>
+                            <div class="menu-group large-6 columns"> 
+                            <h4>Raw Bar</h4>
+                            <div class="menu-item">
+                                <div class="menu-item-name">malpeque oyster</div>
+                                <div class="menu-item-description">prince edward island, canada</div>
+                                <div class="menu-item-price">$3</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">bluepoint oyster</div>
+                                <div class="menu-item-description">long island sound</div>
+                                <div class="menu-item-price">$3</div>
+                            </div>
+                             <div class="menu-item">
+                                <div class="menu-item-name">seafood coctel</div>
+                                <div class="menu-item-description">shrimp, avocado, tomato, cucumber, onion</div>
+                                <div class="menu-item-price">$11</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">raw bass</div>
+                                <div class="menu-item-description">avocado, lime, guajillo</div>
+                                <div class="menu-item-price">$11</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">vuelve a la vida</div>
+                                <div class="menu-item-description">squid, shrimp, salmon, spicy tomato, celery</div>
+                                <div class="menu-item-price">$9</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">ceviche traditional</div>
+                                <div class="menu-item-description">avocado, tomato, jalapeño</div>
+                                <div class="menu-item-price">$9</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">hamachi</div>
+                                <div class="menu-item-description">“horchata”, orange</div>
+                                <div class="menu-item-price">$11</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">vegan ceviche</div>
+                                <div class="menu-item-description">chayote, cauliflower, beet, orange</div>
+                                <div class="menu-item-price">$8</div>
+                            </div>
+                        </div>
+ 
+                        <div class="menu-group large-6 columns"> 
+                        <h4>Entrees</h4>
+                            <div class="menu-item">
+                                <div class="menu-item-name">carne asada</div>
+                                <div class="menu-item-description">flank steak, grilled onions, “pico de gallo”</div>
+                                <div class="menu-item-price">$19</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">grilled hen</div>
+                                <div class="menu-item-description">cauliflower, pickle red onions, salsa verde</div>
+                                <div class="menu-item-price">$16</div>
+                            </div>
+                             <div class="menu-item">
+                                <div class="menu-item-name">lamb en mole</div>
+                                <div class="menu-item-description">poblano, chayote, tomatoes, raisins</div>
+                                <div class="menu-item-price">$22</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">striped bass</div>
+                                <div class="menu-item-description">hominy, mushrooms, chard, hoja santa, guajillo</div>
+                                <div class="menu-item-price">$23</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">salmon veracruz</div>
+                                <div class="menu-item-description">tomato, onion, peppers, capers, olives</div>
+                                <div class="menu-item-price">$19</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">herb crusted mahi mahi</div>
+                                <div class="menu-item-description">salsa negra, pineapple, turnips, scallion</div>
+                                <div class="menu-item-price">$22</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">grilled shrimp al mojo de ajo</div>
+                                <div class="menu-item-description">garlic, lime, tomato, tequila, greens, coronas</div>
+                                <div class="menu-item-price">$21</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-name">oak grilled filet</div>
+                                <div class="menu-item-description">“rajas”, pasilla red wine reduction</div>
+                                <div class="menu-item-price">$36</div>
+                            </div>
+                        </div>
 
                             <!-- TODO for each item on the menu, write a div.menu-item. -->
 
@@ -196,19 +278,43 @@
         <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script> -->
 
         <!-- Foundation JS -->
-        <!-- <script src="/js/foundation.min.js"></script> 
+        <<script src="/js/foundation.min.js"></script> 
         <script>
             $(document).foundation();
-        </script> -->
+            $(function(){
+              $("#slides").slidesjs({
+                play: {
+                  active: true,
+                    // [boolean] Generate the play and stop buttons.
+                    // You cannot use your own buttons. Sorry.
+                  effect: "slide",
+                    // [string] Can be either "slide" or "fade".
+                  interval: 5000,
+                    // [number] Time spent on each slide in milliseconds.
+                  auto: false,
+                    // [boolean] Start playing the slideshow on load.
+                  swap: true,
+                    // [boolean] show/hide stop and play buttons
+                  pauseOnHover: false,
+                    // [boolean] pause a playing slideshow on hover
+                  restartDelay: 2500
+                    // [number] restart delay on inactive slideshow
+                }
+              });
+            });
+        </script>
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/foundation/js/foundation.min.js"></script>
         <script src="js/app.js"></script>
 
 
 
+
+
         <!-- Slides.js -->
         <!-- TODO link to the slides.min.js file -->
         <!-- TODO write the .slidesjs() code to make the slideshow work -->
+
 
 
     </body>

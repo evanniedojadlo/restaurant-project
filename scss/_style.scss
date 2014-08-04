@@ -27,11 +27,13 @@ header {}
 
 header h1 {
 	font-size: 4.5em;
+	text-shadow: 3px 3px 0px rgba(34, 28, 18,.75);
     /* TODO make the font size larger than Foundation's default; I used 4.5em */
     /* TODO add a text-shadow on the h1 using rgba(34, 28, 18,.75) */
 }
 
 header .tagline h4 {
+
     /* TODO make the tagline italic; you'll have to work hard to override Foundation's font-style: normal on all headers! */
     /* TODO add the same text-shadow */
 }

@@ -33,6 +33,8 @@ header h1 {
 }
 
 header .tagline h4 {
+		font-style: italic;
+		text-shadow: 3px 3px 0px rgba(34, 28, 18,.75);
 
     /* TODO make the tagline italic; you'll have to work hard to override Foundation's font-style: normal on all headers! */
     /* TODO add the same text-shadow */
@@ -73,11 +75,18 @@ section {
 
 .location,
 .hours {
+
     /* TODO give these two divs some padding so that they line up with the map */
 }
 
-.hours-label { /* TODO style these with the appropriate font styles (bold/italic) */ }
-.hours-value { /* TODO style these with the appropriate font styles (bold/italic) */ }
+.hours-label { 
+	font-style: bold, italic;
+	/* TODO style these with the appropriate font styles (bold/italic) */ 
+}
+.hours-value { 
+	font-style: bold, italic;
+	/* TODO style these with the appropriate font styles (bold/italic) */ 
+}
 
 
 
@@ -86,10 +95,14 @@ section {
 /* ---------------------------------------------- */
 
 .menu {
+	color: #221c12;
+	background: #fffdf0;
+	
     /* TODO give this section a color of #221c12 and a background of #fffdf0. give it some bottom padding so there's space below the text. */
 }
 
 .menu h2 {
+
     /* TODO make this font size larger than the Foundation default */
 }
 

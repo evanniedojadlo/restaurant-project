@@ -143,19 +143,41 @@ section {
 /* TODO on the ACTIVE menu section links, make them look the same as hovered ones. How do you know if they are active? */
 
 .menu-section-content {
+	margin-top: 3em;
     /* TODO give this some space below the menu links */
 }
 
 
-.menu-item {
-    /* TODO give each menu item some bottom margin */
+.menu-section-item.is-active {    
+    color: #221c12;
+    border-bottom: 1px solid #221c12;     
 }
+
+.menu-item {
+	  margin-bottom: 1em;
+}
+    /* TODO give each menu item some bottom margin */
 
 /* TODO style the menu-item-name to be bold */
 
+.menu-item-name {
+    font-weight: bold;
+}
+
 /* TODO style the menu-item-description to be italic and be in one line with the price. You don't need to use Foundation classes to do this, but if you want to try and see, go for it! */
+.menu-item-description {
+    font-style: italic;
+    display: inline;
+}
+
 
 /* TODO style the menu-item-price to be bold, 50% opacity, in line with the description but have some space to the left of it. */
+
+.menu-item-price {
+    font-weight: bold;
+    opacity: 50%;
+    display: block;
+}
 
 
 .menu-item-name-no-description {
@@ -167,8 +189,21 @@ section {
 /* ---------------------------------------------- */
 
 .contact {
+    background-color: #221c12;
+    background-image: url('../images/symbols-bottom.png');
+    background-repeat: no-repeat;
+    background-position: 0 -160%;
     /* TODO add the dark brown background color, and the background image symbols-bottom. Change the background-position so that the bottom of it shows (where the symbols start to fade out). */
     /* TODO add some top and bottom padding so that the content doesn't overlap the background image. Note how the padding changes the location of the background image. */
 }
+
+.social-links a {
+	 display: inline-block;
+   padding-right: 2em;
+}
+
+.social-links img {
+    opacity: 50%;
+ }
 
 /* TODO make the .social-links links be displayed in a row with some space between them. make them 50% opacity, and fade to 100% opacity when you hover over them. */

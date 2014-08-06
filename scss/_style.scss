@@ -45,6 +45,8 @@ header .tagline {
     text-align: center;
     background: rgba(34, 28, 18,.5);
     padding: 2em;
+    position: absolute;
+    width: 100%;
     /* I added this transparent background bar for you. */
     /* TODO add some padding to give it space around the text */
     /* TODO absolutely position the tagline bar at top: 35%. add a width so that it goes all the way across. */

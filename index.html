@@ -1,31 +1,17 @@
-<!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Chavez | Restaurant by Shawn Cirkiel | at the Radisson, Austin, TX</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chavez | Restaurant by Shawn Cirkiel | at the Radisson, Austin, TX</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+      <!-- Our CSS -->
+    <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+    <!-- Slides.js CSS -->
+    <link rel="stylesheet" href="scss/slides.css">
 
-        <!-- Google Fonts -->
-        <!-- TODO We're going to use the Google Font 'Bitter'. https://www.google.com/fonts#UsePlace:use/Collection:Bitter Link to it here -->
-
-        <!-- Foundation CSS -->
-        <!-- TODO link to foundation's normalize.css -->
-        <!-- TODO link to foundation's foundation.min.css -->
-
-        <!-- If you are using Foundation Sass, keep the head from their file. -->
-
-        <!-- Our CSS -->
-        <!-- <link rel="stylesheet" href="css/application.css">
-
-        <!-- Slides.js CSS -->
-        <link rel="stylesheet" href="css/slides.css">
-        <link rel="stylesheet" href="stylesheets/app.css" />
-        <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
-        <script src="bower_components/modernizr/modernizr.js"></script>
-
-    </head>
-    <body>
+  </head>
 
         <!-- Slide/Header Image -->
         <header>
@@ -37,68 +23,64 @@
                 <h4>the new restaurant by shawn cirkiel<br />poolside at the radisson</h4>
             </div>
 
-
-        <div id="slides">
-            <img src="images/chavez-1.jpg" alt="">
-            <img src="images/chavez-2.jpg" alt="">
-            <img src="images/chavez-3.jpg" alt="">
-            <img src="images/chavez-4.jpg" alt="">
-            <img src="images/chavez-5.jpg" alt="">
-            <img src="images/chavez-6.jpg" alt="">
-            <img src="images/chavez-7.jpg" alt="">
-            <img src="images/chavez-8.jpg" alt="">
-            <img src="images/chavez-9.jpg" alt="">
-            <img src="images/chavez-10.jpg" alt="">
-        </div>
-
             <!-- TODO there are ten images in the images folder. write image tags for each of them. then wrap the images in a #slides div so that Slides JS knows how to find them -->
+            <div id="slides">
+              <img src="images/chavez-1.jpg" alt="">
+              <img src="images/chavez-2.jpg" alt="">
+              <img src="images/chavez-3.jpg" alt="">
+              <img src="images/chavez-4.jpg" alt="">
+              <img src="images/chavez-5.jpg" alt="">
+              <img src="images/chavez-6.jpg" alt="">
+              <img src="images/chavez-7.jpg" alt="">
+              <img src="images/chavez-8.jpg" alt="">
+              <img src="images/chavez-9.jpg" alt="">
+            </div>
+
         </header>
 
         <!-- Address, map, hours -->
         <section class="address">
             <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? What would happen if you did that? -->
-
+            <div class="row">
                 <!-- TODO for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
-                <div class="location">
+                <div class="location column medium-4">
                     <!-- TODO link to the hotel website and make the telephone a tel: link, and style this content -->
-                    <div class="location-name"> at the <a href="http://www.radisson.com/austin-hotel-tx-78701/txaustdt">Radisson Hotel</a> 
-                     </div>
+                    <div class="location-name">
+                      at the <a href="http://www.radisson.com/austin-hotel-tx-78701/txaustdt">Radisson Hotel</a> 
+                    </div>
                     <div class="location-address">
                       111 east cesar chavez
                     </div>
                     <div class="location-city">
-                     austin, texas 78701
+                      austin, texas 78701
                     </div>
                     <div class="location-phone">
                       <a href="tel:15124782291">512.478.2291</a>
                     </div>
                 </div>
 
-                <div class="map">
-                    <a href="http://goo.gl/maps/qgnVW" target="_blank"><img src="images/map.png"></a>
+                <div class="map column medium-4">
                     <!-- TODO there is a map image in the images folder, link to it and make the link to go this google map: goo.gl/maps/qgnVW -->
+                    <a href="http://goo.gl/maps/qgnVW"><img src="images/map.png"></a>
                 </div>
 
-                <div class="hours column large-4">
+                <div class="hours column medium-4">
                     <!-- TODO style this content. use the classes .hours-label and .hours-value to determine which part is which and style it -->
-                            </div>
-                                <span class="hours-label">breakfast:</span><span class="hours-value"> 6:30–11am</span>
-                            </div>
-                            <div>
-                                <span class="hours-label">lunch:</span><span class="hours-value"> 11am–3pm</span>
-                            <div>
-                            </div>
-                                <span class="hours-label">limited menu:</span><span class="hours-value"> 3–5pm</span>
-                            <div>
-                            </div>
-                            <span class="hours-label">dinner:</span><span class="hours-value"> 5–10pm</span>
-                        </div>
+                    <div>
+                      <span class="hours-label">breakfast:</span><span class="hours-value"> 6:30–11am</span>
                     </div>
+                    <div>
+                      <span class="hours-label">lunch:</span><span class="hours-value"> 11am–3pm</span>
+                    <div>
+                    </div>
+                      <span class="hours-label">limited menu:</span><span class="hours-value"> 3–5pm</span>
+                    <div>
+                    </div>
+                      <span class="hours-label">dinner:</span><span class="hours-value"> 5–10pm</span>
+                    </div> 
                 </div>
-
+            </div>
         </section>
-
-
 
         <!-- Menu -->
         <section class="menu">
@@ -107,6 +89,7 @@
             </div>
 
             <!-- TODO add a foundation row wrapping the menu-sections -->
+            <div class="row">
                 <!-- TODO write the following HTML for each of the menus.
 
                 There will be 6 .menu-section divs: breakfast, lunch, dinner, dessert, cocktails, and wine. Give them an ID `menu-action-` for each section, e.g. #menu-action-breakfast
@@ -118,203 +101,124 @@
                 The menu-action class will be used in the JavaScript later.
 
                 -->
-                <div class="menu-action menu-section" id="menu-action-NAMEOFSECTION">
+                <div class="menu-section column small-4 large-2" id="menu-action-breakfast">
                     <h3>
                         <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
-                        <a href="#">
+
+                        <a href="#" class="menu-section-item" id="breakfast">
                             <!-- TODO name of menu section -->
+                            Breakfast
                         </a>
                     </h3>
                 </div>
+                <div class="menu-section column small-4 large-2" id="menu-action-lunch">
+                    <h3>
+                        <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
+
+                        <a href="#" class="menu-section-item is-active" id="lunch">
+                            <!-- TODO name of menu section -->
+                            Lunch
+                        </a>
+                    </h3>
+                </div>
+                <div class="menu-section column small-4 large-2" id="menu-action-dinner">
+                    <h3>
+                        <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
+
+                        <a href="#" class="menu-section-item" id="dinner">
+                            <!-- TODO name of menu section -->
+                            Dinner
+                        </a>
+                    </h3>
+                </div>
+                <div class="menu-section column small-4 large-2" id="menu-action-dessert">
+                    <h3>
+                        <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
+
+                        <a href="#" class="menu-section-item" id="dessert">
+                            <!-- TODO name of menu section -->
+                            Dessert
+                        </a>
+                    </h3>
+                </div>
+                <div class="menu-section column small-4 large-2" id="menu-action-cocktails">
+                    <h3>
+                        <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
+
+                        <a href="#" class="menu-section-item" id="cocktails">
+                            <!-- TODO name of menu section -->
+                            Cocktails
+                        </a>
+                    </h3>
+                </div>                
+                <div class="menu-section column small-4 large-2" id="menu-action-wine">
+                    <h3>
+                        <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
+
+                        <a href="#" class="menu-section-item" id="wine">
+                            <!-- TODO name of menu section -->
+                            Wine
+                        </a>
+                    </h3>
+                </div>
+            </div>
 
             <!-- TODO add a foundation row to wrap around this content -->
-
-                <div id="menu-section-content" class="menu-section-content menu-dinner is-active">
+            <div class="row">
+                <div id="menu-section-content" class="menu-section-content">
                     <!-- TODO we'll add the dinner menu content here. Write two columns with the class .menu-group and the foundation column classes. -->
-
-
-                        <div class="menu-group">
-                            <!-- TODO Inside each .menu-group, there should be an h4 with the title. -->
-                            <div class="menu-group large-6 columns"> 
-                            <h4>Raw Bar</h4>
-                            <div class="menu-item">
-                                <div class="menu-item-name">malpeque oyster</div>
-                                <div class="menu-item-description">prince edward island, canada</div>
-                                <div class="menu-item-price">$3</div>
-                            </div>
-                            <div class="menu-item">
-                                <div class="menu-item-name">bluepoint oyster</div>
-                                <div class="menu-item-description">long island sound</div>
-                                <div class="menu-item-price">$3</div>
-                            </div>
-                             <div class="menu-item">
-                                <div class="menu-item-name">seafood coctel</div>
-                                <div class="menu-item-description">shrimp, avocado, tomato, cucumber, onion</div>
-                                <div class="menu-item-price">$11</div>
-                            </div>
-                            <div class="menu-item">
-                                <div class="menu-item-name">raw bass</div>
-                                <div class="menu-item-description">avocado, lime, guajillo</div>
-                                <div class="menu-item-price">$11</div>
-                            </div>
-                            <div class="menu-item">
-                                <div class="menu-item-name">vuelve a la vida</div>
-                                <div class="menu-item-description">squid, shrimp, salmon, spicy tomato, celery</div>
-                                <div class="menu-item-price">$9</div>
-                            </div>
-                            <div class="menu-item">
-                                <div class="menu-item-name">ceviche traditional</div>
-                                <div class="menu-item-description">avocado, tomato, jalapeño</div>
-                                <div class="menu-item-price">$9</div>
-                            </div>
-                            <div class="menu-item">
-                                <div class="menu-item-name">hamachi</div>
-                                <div class="menu-item-description">“horchata”, orange</div>
-                                <div class="menu-item-price">$11</div>
-                            </div>
-                            <div class="menu-item">
-                                <div class="menu-item-name">vegan ceviche</div>
-                                <div class="menu-item-description">chayote, cauliflower, beet, orange</div>
-                                <div class="menu-item-price">$8</div>
-                            </div>
-                        </div>
- 
-                        <div class="menu-group large-6 columns"> 
-                        <h4>Entrees</h4>
-                            <div class="menu-item">
-                                <div class="menu-item-name">carne asada</div>
-                                <div class="menu-item-description">flank steak, grilled onions, “pico de gallo”</div>
-                                <div class="menu-item-price">$19</div>
-                            </div>
-                            <div class="menu-item">
-                                <div class="menu-item-name">grilled hen</div>
-                                <div class="menu-item-description">cauliflower, pickle red onions, salsa verde</div>
-                                <div class="menu-item-price">$16</div>
-                            </div>
-                             <div class="menu-item">
-                                <div class="menu-item-name">lamb en mole</div>
-                                <div class="menu-item-description">poblano, chayote, tomatoes, raisins</div>
-                                <div class="menu-item-price">$22</div>
-                            </div>
-                            <div class="menu-item">
-                                <div class="menu-item-name">striped bass</div>
-                                <div class="menu-item-description">hominy, mushrooms, chard, hoja santa, guajillo</div>
-                                <div class="menu-item-price">$23</div>
-                            </div>
-                            <div class="menu-item">
-                                <div class="menu-item-name">salmon veracruz</div>
-                                <div class="menu-item-description">tomato, onion, peppers, capers, olives</div>
-                                <div class="menu-item-price">$19</div>
-                            </div>
-                            <div class="menu-item">
-                                <div class="menu-item-name">herb crusted mahi mahi</div>
-                                <div class="menu-item-description">salsa negra, pineapple, turnips, scallion</div>
-                                <div class="menu-item-price">$22</div>
-                            </div>
-                            <div class="menu-item">
-                                <div class="menu-item-name">grilled shrimp al mojo de ajo</div>
-                                <div class="menu-item-description">garlic, lime, tomato, tequila, greens, coronas</div>
-                                <div class="menu-item-price">$21</div>
-                            </div>
-                            <div class="menu-item">
-                                <div class="menu-item-name">oak grilled filet</div>
-                                <div class="menu-item-description">“rajas”, pasilla red wine reduction</div>
-                                <div class="menu-item-price">$36</div>
-                            </div>
-                        </div>
-
-                            <!-- TODO for each item on the menu, write a div.menu-item. -->
-
-                                <!-- TODO inside each div.menu-item, there should be a div.menu-item-name, a p.menu-item-description, and a div.menu-item-price. -->
-
-                                <!-- TODO we are going to do ONLY the "Raw Bar" and "Entrees" section of the dinner menu for now. You can find that content in /menu-content/menu-dinner.md We'll add the rest of the menus with JSON later. -->
-                        </div>
                 </div>
-
+            </div>
         </section>
 
         <!-- Social media -->
         <section class="contact">
 
             <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? -->
-
+            <div class="row socials">
                 <!-- TODO for each of these 3 divs, add foundation columns so that they sit side by side. make them stack at small screen sizes. -->
 
-                <div class="email">
+                <div class="email column small-12 medium-4">
                     <h5>Email</h5>
                     <!-- TODO make this an email link -->
-                <a href="mailto:info@chavez-austin.com?Subject=Hello" target="_top">
+                    <a href="mailto:info@chavez-austin.com">info@chavez-austin.com</a>
                 </div>
 
-                <div class="social">
+                <div class="social column small-12 medium-4">
                     <h5>Social Media</h5>
                     <!-- TODO write a div.social-links. -->
+                    <div class="social-links">
                         <!-- TODO inside that div, write a link that links to the social media links, and use the social media images in the image folder. -->
                             <!-- TODO Facebook http://facebook.com/ChavezATX -->
+                        <a href="http://facebook.com/ChavezATX"><img src="images/facebook.png"></a>
                             <!-- TODO Twitter http://twitter.com/ChavezATX -->
+                        <a href="http://twitter.com/ChavezATX"><img src="images/twitter.png"></a>
                             <!-- TODO Instagram http://instagram.com/ChavezATX -->
-
-
-                            <div class="social-links">
-                                <a href="http://facebook.com/ChavezATX" target="_blank"><img src="images/facebook.png"></a>
-                                <a href="http://twitter.com/ChavezATX" target="_blank"><img src="images/twitter.png"></a>
-                                <a href="http://instagram.com/ChavezATX" target="_blank"><img src="images/instagram.png"></a>
-                            </div>
+                        <a href="http://instagram.com/ChavezATX"><img src="images/instagram.png"></a>
+                    </div>
                 </div>
 
-                <div class="press columns small-4">
+                <div class="press columns small-12 medium-4">
                     <h5>Press Inquiries</h5>
                     <!-- TODO make this an email link -->
-                    <a href="mailto:press@chavezrestaurant.com?Subject=Hello" targe="_top">
+                    <a href="mailto:press@chavezrestaurant.com">press@chavezrestaurant.com</a>
                 </div>
 
             </div>
 
         </section>
 
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
         <!-- JavaScripts -->
 
-        <!-- jQuery -->
-        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script> -->
-
-        <!-- Foundation JS -->
-        <script src="/js/foundation.min.js"></script> 
-        <script>
-            $(document).foundation();
-            $(function(){
-              $("#slides").slidesjs({
-                play: {
-                  active: true,
-                    // [boolean] Generate the play and stop buttons.
-                    // You cannot use your own buttons. Sorry.
-                  effect: "slide",
-                    // [string] Can be either "slide" or "fade".
-                  interval: 5000,
-                    // [number] Time spent on each slide in milliseconds.
-                  auto: false,
-                    // [boolean] Start playing the slideshow on load.
-                  swap: true,
-                    // [boolean] show/hide stop and play buttons
-                  pauseOnHover: false,
-                    // [boolean] pause a playing slideshow on hover
-                  restartDelay: 2500
-                    // [number] restart delay on inactive slideshow
-                }
-              });
-            });
-        </script>
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="bower_components/foundation/js/foundation.min.js"></script>
-        <script src="js/app.js"></script>
-
-
-
         <!-- Slides.js -->
         <!-- TODO link to the slides.min.js file -->
+        <script type="text/javascript" src="js/jquery.slides.min.js"></script>
         <!-- TODO write the .slidesjs() code to make the slideshow work -->
 
-
-
-    </body>
+  </body>
 </html>
